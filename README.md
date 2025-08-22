@@ -25,7 +25,7 @@ This project demonstrates how to build a layered Spring Boot application using *
 ---
 ## 📂 Project Structure
 
-
+```
 src/main/java/com/example/Springbootpractice
 │
 ├── Controller
