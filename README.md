@@ -49,14 +49,3 @@ src/main/java/com/example/Springbootpractice
 └── SpringbootpracticeApplication.java
 
 
-## ⚡ Getting Started
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/<your-username>/springboot-department-management.git
-cd springboot-department-management
-
-
-
-
-
