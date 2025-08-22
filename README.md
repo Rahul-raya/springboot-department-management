@@ -49,6 +49,8 @@ src/main/java/com/example/Springbootpractice
 │
 └── SpringbootpracticeApplication.java
 
+```
+
 ---
 
 ## ⚡ Getting Started
@@ -57,13 +59,56 @@ src/main/java/com/example/Springbootpractice
 ```bash
 git clone https://github.com/<your-username>/springboot-department-management.git
 cd springboot-department-management
-
----
+```
 
 2️⃣ Configure MySQL Database
 
 Update your src/main/resources/application.properties with your DB credentials:
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/departmentdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+```
+Make sure you create the database first in MySQL:
+```
+CREATE DATABASE departmentdb;
+```
+3️⃣ Build & Run the application
+```
+mvn spring-boot:run
 
+```
+---
+🔗 API Endpoints
+| Method | Endpoint            | Description             |
+| ------ | ------------------- | ----------------------- |
+| POST   | `/departments`      | Add a new department    |
+| GET    | `/departments`      | Get all departments     |
+| GET    | `/departments/{id}` | Get department by ID    |
+| PUT    | `/departments/{id}` | Update department by ID |
+| DELETE | `/departments/{id}` | Delete department by ID |
 
+---
+🧪 Testing
 
+JUnit test cases are included for:
+
+Controller layer
+
+Service layer
+
+Repository layer
+
+Run tests with:
+```
+mvn test
+```
+
+👨‍💻 Author
+
+Raya Veera Venkata Naga Rahul Reddy
+GitHub: @Rahul-raya
 
