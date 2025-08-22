@@ -25,3 +25,38 @@ This project demonstrates how to build a layered Spring Boot application using *
 ---
 
 ## 📂 Project Structure
+src/main/java/com/example/Springbootpractice
+│
+├── Controller
+│ ├── DepartmentController.java
+│ └── HelloController.java
+│
+├── entity
+│ ├── Department.java
+│ └── ErrorMessage.java
+│
+├── repository
+│ └── DepartmentRepository.java
+│
+├── service
+│ ├── DepartmentService.java
+│ └── DepartmentServiceimp.java
+│
+├── Error
+│ ├── DeptNotFoundException.java
+│ └── RestResponseEntityExceptionHandler.java
+│
+└── SpringbootpracticeApplication.java
+
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/springboot-department-management.git
+cd springboot-department-management
+
+
+
+
+
